@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="48dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Go back"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@android:color/white"
+            tools:ignore="UseAppTint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp">
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="6dp"
+                android:layout_weight="1"
+                android:background="#FF6000"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dietary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:text="Dietary"
+        android:textColor="#454545"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="0dp"/>
+
+    <TextView
+        android:id="@+id/preference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:textColor="#454545"
+        android:text="Preferences"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you follow any dietary restrictions?"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="5">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vegan"
+            android:text="Vegan"
+            android:textColor="#454545"
+            android:buttonTint="#FF6000"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/halal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halal"
+            android:textColor="#454545"
+            android:buttonTint="#FF6000"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/vegetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian"
+            android:textColor="#454545"
+            android:buttonTint="#FF6000"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/kosher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kosher"
+            android:textColor="#454545"
+            android:buttonTint="#FF6000"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/gluten_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gluten-Free"
+            android:textColor="#454545"
+            android:buttonTint="#FF6000"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nut_free"
+            android:text="Nut-Free"
+            android:textColor="#454545"
+            android:buttonTint="#FF6000"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/lactose_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lactose-Free"
+            android:textColor="#454545"
+            android:buttonTint="#FF6000"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:padding="1dp"
+        android:text="continue"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="15dp"
+            android:height="15dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+            <path
+                android:pathData="M10,30 L50,70 L90,30"
+                android:strokeWidth="10"
+                android:strokeColor="#FF4400"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:fillColor="@android:color/transparent"/>
+        </vector>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="15dp"
+            android:height="15dp"
+            android:viewportWidth="100"
+            android:viewportHeight="100">
+            <path
+                android:pathData="M10,30 L50,70 L90,30"
+                android:strokeWidth="10"
+                android:strokeColor="#FF6600"
+                android:strokeLineCap="round"
+                android:strokeLineJoin="round"
+                android:fillColor="@android:color/transparent"/>
+        </vector>
+    </item>
+</selector>

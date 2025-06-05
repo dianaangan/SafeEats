@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/allergen"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_allergen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:text="Soy"
+        android:textColor="#454545"
+        android:textSize="16sp" />
+
+    <RadioButton
+        android:id="@+id/text_mild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:button="@drawable/radio_button_selector"
+        android:checked="false"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:paddingStart="8dp"
+        android:text="Mild"
+        android:textColor="#454545"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/text_moderate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:button="@drawable/radio_button_selector"
+        android:checked="false"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:paddingStart="8dp"
+        android:text="Moderate"
+        android:textColor="#454545"
+        android:textSize="14sp" />
+
+    <RadioButton
+        android:id="@+id/text_severe"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:button="@drawable/radio_button_selector"
+        android:checked="false"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:paddingStart="8dp"
+        android:text="Severe"
+        android:textColor="#454545"
+        android:textSize="14sp" />
+</RadioGroup>

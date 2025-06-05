@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_logo"
+        android:contentDescription="SafeEats logo" />
+
+
+    <TextView
+        android:id="@+id/tv_description_title"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:gravity="center"
+        android:text="SafeEats"
+        android:textAlignment="center"
+        android:textColor="#FF6000"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:gravity="center"
+        android:text="Your AI-powered food safety companion. Scan, analyze, and ensure the quality of your meals in seconds. Eat smart, stay safe!"
+        android:textAlignment="center"
+        android:textColor="#454545"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:background="@drawable/rounded_button"
+        android:padding="12dp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_get_started_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/outlined_button"
+        android:padding="12dp"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:text="I Already Have an Account"
+        android:textAllCaps="false"
+        android:textColor="#454545"
+        android:textSize="16sp" />
+
+</LinearLayout>

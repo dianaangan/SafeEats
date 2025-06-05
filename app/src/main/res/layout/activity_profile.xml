@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@android:color/white">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btn_logout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_logout"
+        android:tint="@android:color/white"
+        android:contentDescription="Go back"
+        android:layout_marginBottom="48dp"
+        tools:ignore="UseAppTint" />
+
+    <!-- Title Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to "
+        android:textColor="#E8A44C"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SafeEats"
+        android:textColor="#E8A44C"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="48dp" />
+
+    <!-- Fullname Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_person"
+            android:tint="#E8A44C"
+            android:layout_marginEnd="12dp"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/et_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Enter your fullname"
+            android:inputType="textPersonName"
+            android:textColorHint="#BBBBBB"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Email Input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_dialog_email"
+            android:tint="#E8A44C"
+            android:layout_marginEnd="12dp"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#BBBBBB"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Password Input -->
+
+    <!-- Confirm Password Input -->
+
+    <!-- Register Button -->
+
+    <!-- Or continue with text -->
+
+    <!-- Google Sign In Button -->
+
+    <!-- Login Link -->
+
+</LinearLayout>

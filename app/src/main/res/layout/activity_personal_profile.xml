@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="18dp"
+        android:paddingHorizontal="20dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/circle_background"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="8dp"
+            android:contentDescription="Back"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/profiledesc"
+            android:layout_width="315dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Profile"
+            android:fontFamily="@font/roboto_serif_bold"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="35dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/profile_avatar_background"
+                android:src="@drawable/ic_person"
+                android:scaleType="centerCrop"
+                android:contentDescription="Profile Picture" />
+
+
+            <ImageButton
+                android:id="@+id/changePhotoButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:background="@drawable/circle_background"
+                android:contentDescription="Change Photo"
+                android:padding="7dp"
+                android:src="@drawable/ic_camera"
+                app:tint="@color/white" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:text=""
+            android:textColor="#454545"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profileTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Personal"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_serif_bold"
+            android:textColor="#454545"
+            android:gravity="center"
+            android:paddingVertical="12dp" />
+
+        <TextView
+            android:id="@+id/dietaryTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dietary"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:textColor="#454545"
+            android:gravity="center"
+            android:paddingVertical="12dp" />
+
+        <TextView
+            android:id="@+id/allergenTab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Allergen"
+            android:textSize="14sp"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:textColor="#454545"
+            android:gravity="center"
+            android:paddingVertical="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/personalTabIndicator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF5722" />
+
+        <View
+            android:id="@+id/dietaryTabIndicator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E0E0E0" />
+
+        <View
+            android:id="@+id/allergenTabIndicator"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#E0E0E0" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/personalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_serif_bold"
+                android:text="Personal Information"
+                android:textColor="#454545"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/roboto_serif_regular"
+                android:text="You can change your personal information settings here."
+                android:textColor="#454545"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_serif_bold"
+                android:text="Email"
+                android:textColor="#454545"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edit_text"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/tv_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/roboto_serif_regular"
+                    android:text=""
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:textColor="#454545"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_serif_bold"
+                android:text="First name"
+                android:textColor="#454545"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edit_text"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/et_first_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/roboto_serif_regular"
+                    android:gravity="center_vertical"
+                    android:padding="0dp"
+                    android:text=""
+                    android:textColor="#454545"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_cancel_first_name"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Cancel Selection"
+                    android:enabled="false"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_cancel"
+                    app:tint="#454545" />
+
+                <ImageButton
+                    android:id="@+id/btn_edit_first_name"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Edit Firstname"
+                    android:src="@drawable/ic_edit"
+                    app:tint="#454545" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_serif_bold"
+                android:text="Middle name"
+                android:textColor="#454545"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edit_text"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <EditText
+                    android:id="@+id/et_middle_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_serif_regular"
+                    android:background="@android:color/transparent"
+                    android:text=""
+                    android:textColor="#454545"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:id="@+id/btn_cancel_middle_name"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Cancel Selection"
+                    android:enabled="false"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_cancel"
+                    app:tint="#454545" />
+
+                <ImageButton
+                    android:id="@+id/btn_edit_middle_name"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Edit Middlename"
+                    android:src="@drawable/ic_edit"
+                    app:tint="#454545" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last name"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/roboto_serif_bold"
+                android:textColor="#454545"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/et_last_name"
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_serif_regular"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#454545" />
+
+                <ImageButton
+                    android:id="@+id/btn_cancel_last_name"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Cancel Selection"
+                    android:enabled="false"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_cancel"
+                    app:tint="#454545" />
+
+                <ImageButton
+                    android:id="@+id/btn_edit_last_name"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_edit"
+                    android:contentDescription="Edit Lastname"
+                    app:tint="#454545" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/dietaryScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="@font/roboto_serif_bold"
+                android:text="Dietary Information"
+                android:textColor="#454545"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/roboto_serif_regular"
+                android:text="You can change your dietary information settings here."
+                android:textColor="#454545"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/roboto_serif_bold"
+                    android:text="Preference"
+                    android:textColor="#454545"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/addPreference"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ic_add"
+                    android:contentDescription="Add Preference"
+                    android:padding="6dp"
+                    app:tint="#454545" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/preferencesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addNewPreferenceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/preferenceName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_serif_regular"
+                        android:text="Select Preference"
+                        android:textColor="#454545"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/preferenceDropdown"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_dropdown"
+                        app:tint="#454545" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/cancelPreferenceButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Cancel Selection"
+                    android:src="@drawable/ic_cancel"
+                    app:tint="#454545" />
+
+                <ImageButton
+                    android:id="@+id/confirmPreferenceButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Confirm Selection"
+                    android:src="@drawable/ic_check"
+                    app:tint="#454545" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/allergenScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_serif_bold"
+                android:text="Allergen Information"
+                android:textColor="#454545"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/roboto_serif_regular"
+                android:text="You can change your allergen information settings here."
+                android:textColor="#454545"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/roboto_serif_bold"
+                    android:text="Allergen"
+                    android:textColor="#454545"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/addAllergen"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/ic_add"
+                    android:contentDescription="Add Allergen"
+                    android:padding="6dp"
+                    app:tint="#454545" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/allergensContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addNewAllergenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/allergenName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_serif_regular"
+                        android:text="Select Allergen"
+                        android:textColor="#454545"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/allergenDropdown"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_dropdown"
+                        app:tint="#454545" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/allergenLevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_serif_regular"
+                        android:text="Select Level"
+                        android:textColor="#454545"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/levelDropdown"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_dropdown"
+                        app:tint="#454545" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/cancelAllergenButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Cancel Selection"
+                    android:src="@drawable/ic_cancel"
+                    app:tint="#454545" />
+
+                <ImageButton
+                    android:id="@+id/confirmAllergenButton"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Confirm Selection"
+                    android:src="@drawable/ic_check"
+                    app:tint="#454545" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

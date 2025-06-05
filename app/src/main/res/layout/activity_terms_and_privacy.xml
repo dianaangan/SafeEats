@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Go back"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@android:color/white"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:id="@+id/safeeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SafeEats"
+            android:fontFamily="@font/roboto_serif_bold"
+            android:textColor="#454545"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/termscondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Terms &amp; Conditions"
+            android:fontFamily="@font/roboto_serif_bold"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:text="Last Updated: March 22, 2025"
+            android:textColor="#454545"
+            android:textSize="12sp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By using SafeEats, you agree to these terms. SafeEats provides AI-based food safety assessments but does not replace professional evaluations. Users must make informed decisions based on official food safety guidelines. The app is for lawful, responsible use only, and misuse is prohibited. SafeEats is not liable for any health issues resulting from food consumed based on its assessments. Terms may be updated, and continued use implies acceptance."
+            android:textColor="#454545"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:textSize="12sp"
+            android:layout_marginBottom="30dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="2dp"/>
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_serif_bold"
+            android:text="Privacy Policy"
+            android:textColor="#454545"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:text="Last Updated: March 22, 2025"
+            android:textColor="#454545"
+            android:textSize="12sp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_serif_regular"
+            android:text="SafeEats collects minimal user data, including food scan details and device interactions, to improve app functionality. We do not sell personal data, though anonymized data may be used for research. Data is securely stored and protected. Users can request access, updates, or deletion of their data. Opting out of certain features may limit app functionality."
+            android:textColor="#454545"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="2dp"
+            android:text="For inquiries, contact anganangandianarose@gmail.com. Continued use of SafeEats confirms acceptance of these terms and policies."
+            android:textColor="#454545"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/roboto_serif_bold"
+            android:padding="9dp"
+            android:text="I have read the terms &amp; Conditions and Privacy Policy"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

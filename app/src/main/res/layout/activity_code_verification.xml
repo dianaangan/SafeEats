@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="6dp"
+            android:layout_weight="1"
+            android:background="#FF6000"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:layout_weight="2"
+            android:background="#F5D6A8"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/verificationdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:text="Verification Code"
+        android:textColor="#454545"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_email_info"
+        android:text=""
+        android:fontFamily="@font/roboto_serif_regular"
+        android:textColor="#454545"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_serif_regular"
+        android:text="Please enter your code that receive in your email."
+        android:textColor="#454545"
+        android:textSize="14sp"
+        android:layout_marginBottom="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_codeDigit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="X"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="10dp"
+                android:textColorHint="#454545"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_codeDigit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="X"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="10dp"
+                android:textColorHint="#454545"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_codeDigit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="X"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="10dp"
+                android:textColorHint="#454545"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="78dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_edit_text"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_codeDigit4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="X"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="10dp"
+                android:textColorHint="#454545"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/tv_resend_code"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend code"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/roboto_serif_bold"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:padding="9dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify"
+            android:fontFamily="@font/roboto_serif_bold"
+            android:textColor="#3D3B40"
+            android:background="@drawable/rounded_outline_button_background"
+            android:textAllCaps="false"
+            android:padding="9dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
